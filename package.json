@@ -1,0 +1,21 @@
+{
+  "name": "dd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ecoMelnikov.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:watch": "tsc --watch",
+    "run:watch": "nodemon dist/my-app.js --watch dist",
+    "start": "npm-run-all --parallel build:watch run:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5"
+  }
+}
