@@ -31,21 +31,35 @@ export class ConsumerCosts {
     if (coefFiekd === 1) {
       this.mSalaryMain = result;
       this.ozpMain = ozp;
+      console.log(
+        "Основная и дополнительная заработная плата оператора",
+        this.mSalaryMain,
+        "Отчисления в ФСЗН и БГС оператора",
+        this.ozpMain
+      );
     } else {
       this.mSalaryExtra = result;
       this.ozpExtra = ozp;
+
+      console.log(
+        "Основная и дополнительная зарплата вспомогательных рабочих",
+        this.mSalaryExtra,
+        "Отчисления в ФСЗН и БГС вспомогательных рабочих",
+        this.ozpExtra
+      );
     }
   }
 
-  setFuelCoast(poverEng: number, coef: number) {
-    const fuelSm = countWorkHour * poverEng * 0.22 * coef * 0.85;
+  setFuelCoast(coef: number) {
+    const fuelSm = countWorkHour * 114 * 0.22 * coef * 0.85;
     console.log(fuelSm, "Расход в смену");
     this.fuelCoast = fuelSm * fuelCoastLiter * 1.1;
+    console.log(fuelSm, "Затраты на топливо в смену");
   }
   setLubricantCoast(
     coef1: number,
     coef2: number,
-    field: "engine" | "trans" | "plastic"
+    field: "engine" | "trans" | "plastic" | "hidro"
   ) {
     const result = this.fuelCoast * coef1 * coef2;
     switch (field) {
@@ -60,6 +74,10 @@ export class ConsumerCosts {
       case "plastic":
         console.log("пластичная", result);
         this.lubricantCoastPlastic = result;
+        break;
+      case "hidro":
+        console.log("гидравлика", result);
+        this.lubricantCoastHidro = result;
         break;
       default:
         break;
@@ -80,13 +98,16 @@ export class ConsumerCosts {
 
   setCoastRepair(TO: number) {
     this.coastRepair = (TO / 100) * countWorkHour;
+    console.log("затраты на то", this.coastRepair);
   }
 
   setDepricationCoast() {
     this.coastDeprication = (this.coastCar * 0.2) / 269;
+    console.log("зараты на амортизацию", this.coastDeprication);
   }
   setTireCoast(coef: number) {
     this.coastTire = (1.64 * 27600 * 1.1 * coef) / 100000;
+    console.log("затраты на шины", this.coastTire);
   }
 
   sumConsumersCoast(pSmen: number) {
@@ -101,7 +122,11 @@ export class ConsumerCosts {
     console.log("Прочие расходы", mainCoast * 0.1);
 
     this.allConsumerCoasts = mainCoast * 1.1;
-
+    console.log("Всего эксплуатационных затрат", this.allConsumerCoasts);
     this.specificConsumerCoast = this.allConsumerCoasts / pSmen;
+    console.log(
+      "Удельные эксплуатационные затраты,",
+      this.specificConsumerCoast
+    );
   }
 }

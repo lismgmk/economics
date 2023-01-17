@@ -28,22 +28,30 @@ export class PerformanceCar {
       result += el;
     });
     this.cicl = result;
+    console.log(
+      "время, затраченное на выполнение операций по сбору и транспортировке",
+      this.cicl
+    );
   }
 
   setPSmen() {
     this.pSmen =
       ((countWorkHour * 3600 - 2400) * this._Vp * 0.85 * 0.87) / this.cicl;
+    console.log("сменная производительность", this.pSmen);
   }
 
   setPyear() {
     this.pYear = this.pSmen * 269 * 1;
+    console.log("годовая производительность", this.pYear);
   }
 
   setSeveralHardWorkn() {
     this.severalHardWorkn = (countWorkHour * 1) / this.pSmen;
+    console.log("Удельная трудоемкость", this.severalHardWorkn);
   }
 
   setProduction() {
     this.production = this.pSmen / this.severalHardWorkn;
+    console.log("выработка", this.production);
   }
 }
