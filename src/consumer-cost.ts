@@ -8,6 +8,7 @@ export class ConsumerCosts {
   ozpMain = 0;
   ozpExtra = 0;
   fuelCoast = 0;
+  fuelSm = 0;
   lubricantCoastEngine = 0;
   lubricantCoastHidro = 0;
   lubricantCoastTransmission = 0;
@@ -51,17 +52,17 @@ export class ConsumerCosts {
   }
 
   setFuelCoast(coef: number) {
-    const fuelSm = countWorkHour * 114 * 0.22 * coef * 0.85;
-    console.log(fuelSm, "Расход в смену");
-    this.fuelCoast = fuelSm * fuelCoastLiter * 1.1;
-    console.log(fuelSm, "Затраты на топливо в смену");
+    this.fuelSm = countWorkHour * 114 * 0.22 * coef * 0.85;
+    console.log(this.fuelSm, "Расход в смену");
+    this.fuelCoast = this.fuelSm * fuelCoastLiter * 1.1;
+    console.log(this.fuelCoast, "Затраты на топливо в смену");
   }
   setLubricantCoast(
     coef1: number,
     coef2: number,
     field: "engine" | "trans" | "plastic" | "hidro"
   ) {
-    const result = this.fuelCoast * coef1 * coef2;
+    const result = this.fuelSm * coef1 * coef2;
     switch (field) {
       case "engine":
         console.log("моторное", result);

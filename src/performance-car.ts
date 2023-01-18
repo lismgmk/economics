@@ -51,7 +51,7 @@ export class PerformanceCar {
   }
 
   setProduction() {
-    this.production = this.pSmen / this.severalHardWorkn;
+    this.production =countWorkHour / this.severalHardWorkn;
     console.log("выработка", this.production);
   }
 }
