@@ -47,7 +47,7 @@ consumerCosts1.setLubricantCoast(0.008, 13.5, "plastic");
 consumerCosts1.setCoastRepair(Repair1);
 consumerCosts1.setDepricationCoast();
 consumerCosts1.setTireCoast(tairCoef1);
-consumerCosts1.setTireCoast(performanceCar1.pSmen);
+consumerCosts1.sumConsumersCoast(performanceCar1.pSmen);
 
 consumerCosts2.setMainSalaryMainEmploy(1.9);
 consumerCosts2.setMainSalaryMainEmploy(1.35, 0.76);
@@ -59,7 +59,7 @@ consumerCosts2.setLubricantCoast(0.008, 13.5, "plastic");
 consumerCosts2.setCoastRepair(Repair2);
 consumerCosts2.setDepricationCoast();
 consumerCosts2.setTireCoast(tairCoef2);
-consumerCosts2.setTireCoast(performanceCar2.pSmen);
+consumerCosts2.sumConsumersCoast(performanceCar2.pSmen);
 
 // 5.4 Оценки эффективности внедрения новой техники
 

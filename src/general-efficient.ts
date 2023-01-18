@@ -35,7 +35,7 @@ export class GeneralEfficient {
     console.log("Годовой экономический эффект", this.efficientYear);
     const term =
       (this.carCoastProject - this.carCoastBasic) / this.efficientYear;
-    console.log("Годовой экономический эффект", term);
+    console.log("Срок окупаемости", term);
     const coefTerm = 1 / term;
     console.log(
       "Коэффициент сравнительной экономической эффективности",
