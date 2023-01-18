@@ -6,8 +6,8 @@ import { cicleParam } from "./utils/consts";
 
 const valueWood1 = 11;
 const valueWood2 = 12;
-const coastCar1 = 250000;
-const coastCar2 = 260000;
+const coastCar1 = 1240000;
+const coastCar2 = 1300000;
 const coefEng1 = 0.86;
 const coefEng2 = 0.9;
 const Repair1 = 2050;
