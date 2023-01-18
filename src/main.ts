@@ -4,29 +4,29 @@ import { PerformanceCar } from "./performance-car";
 import { PropertyEfficient } from "./property-efficient";
 import { cicleParam1, cicleParam2  } from "./utils/consts";
 
-const valueWood1 = 11;
-const valueWood2 = 12;
-const coastCar1 = 1270000;
-const coastCar2 = 1300000;
+const valueWood1 = 700;
+const valueWood2 = 825;
+const coastCar1 = 1450000;
+const coastCar2 = 1600000;
 const coefEng1 = 0.86;
 const coefEng2 = 0.9;
 const Repair1 = 2050;
 const Repair2 = 2100;
-const tairCoef1 = 4.93;
-const tairCoef2 = 4.75;
+const tairCoef1 = 9.75;
+const tairCoef2 = 9.75;
 
 // 5.3.1 Расчет производительности техники
 
 const performanceCar1 = new PerformanceCar(valueWood1);
 const performanceCar2 = new PerformanceCar(valueWood2);
 
-performanceCar1.setCicl(cicleParam1);
+// performanceCar1.setCicl(cicleParam1);
 performanceCar1.setPSmen();
 performanceCar1.setPyear();
 performanceCar1.setSeveralHardWorkn();
 performanceCar1.setProduction();
 
-performanceCar2.setCicl(cicleParam2);
+// performanceCar2.setCicl(cicleParam2);
 performanceCar2.setPSmen();
 performanceCar2.setPyear();
 performanceCar2.setSeveralHardWorkn();

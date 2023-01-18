@@ -36,7 +36,7 @@ export class PerformanceCar {
 
   setPSmen() {
     this.pSmen =
-      ((countWorkHour * 3600 - 2400) * this._Vp * 0.85 * 0.87) / this.cicl;
+      ((countWorkHour * 3600 - 3900)*0.65*0.7*0.8 * this._Vp * 6 * 0.024*0.785*0.04) / 60;
     console.log("сменная производительность", this.pSmen);
   }
 
