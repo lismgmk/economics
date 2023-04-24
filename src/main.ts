@@ -1,8 +1,8 @@
-import { ConsumerCosts } from "./consumer-cost";
-import { GeneralEfficient } from "./general-efficient";
-import { PerformanceCar } from "./performance-car";
-import { PropertyEfficient } from "./property-efficient";
-import { cicleParam1, cicleParam2  } from "./utils/consts";
+import { ConsumerCosts } from './consumer-cost';
+import { GeneralEfficient } from './general-efficient';
+import { PerformanceCar } from './performance-car';
+import { PropertyEfficient } from './property-efficient';
+import { cicleParam1, cicleParam2 } from './utils/consts';
 
 const valueWood1 = 11;
 const valueWood2 = 12;
@@ -21,16 +21,17 @@ const performanceCar1 = new PerformanceCar(valueWood1);
 const performanceCar2 = new PerformanceCar(valueWood2);
 
 performanceCar1.setCicl(cicleParam1);
-performanceCar1.setPSmen();
+performanceCar1.setPSmen(57.14);
 performanceCar1.setPyear();
 performanceCar1.setSeveralHardWorkn();
 performanceCar1.setProduction();
 
 performanceCar2.setCicl(cicleParam2);
-performanceCar2.setPSmen();
+performanceCar2.setPSmen(62.5);
 performanceCar2.setPyear();
 performanceCar2.setSeveralHardWorkn();
 performanceCar2.setProduction();
+
 
 // 5.3.3 Эксплуатационные затраты потребителя по вариантам машин
 
@@ -40,10 +41,10 @@ const consumerCosts2 = new ConsumerCosts(coastCar2);
 consumerCosts1.setMainSalaryMainEmploy(1.9);
 consumerCosts1.setMainSalaryMainEmploy(1.35, 0.76);
 consumerCosts1.setFuelCoast(coefEng1);
-consumerCosts1.setLubricantCoast(0.039, 18, "engine");
-consumerCosts1.setLubricantCoast(0.019, 18.5, "hidro");
-consumerCosts1.setLubricantCoast(0.01, 6.75, "trans");
-consumerCosts1.setLubricantCoast(0.008, 13.5, "plastic");
+consumerCosts1.setLubricantCoast(0.039, 18, 'engine');
+consumerCosts1.setLubricantCoast(0.019, 18.5, 'hidro');
+consumerCosts1.setLubricantCoast(0.01, 6.75, 'trans');
+consumerCosts1.setLubricantCoast(0.008, 13.5, 'plastic');
 consumerCosts1.countCoastFuelLubricant();
 consumerCosts1.setCoastRepair(Repair1);
 consumerCosts1.setDepricationCoast();
@@ -53,10 +54,10 @@ consumerCosts1.sumConsumersCoast(performanceCar1.pSmen);
 consumerCosts2.setMainSalaryMainEmploy(1.9);
 consumerCosts2.setMainSalaryMainEmploy(1.35, 0.76);
 consumerCosts2.setFuelCoast(coefEng2);
-consumerCosts2.setLubricantCoast(0.039, 18, "engine");
-consumerCosts2.setLubricantCoast(0.019, 18.5, "hidro");
-consumerCosts2.setLubricantCoast(0.01, 6.75, "trans");
-consumerCosts2.setLubricantCoast(0.008, 13.5, "plastic");
+consumerCosts2.setLubricantCoast(0.039, 18, 'engine');
+consumerCosts2.setLubricantCoast(0.019, 18.5, 'hidro');
+consumerCosts2.setLubricantCoast(0.01, 6.75, 'trans');
+consumerCosts2.setLubricantCoast(0.008, 13.5, 'plastic');
 consumerCosts2.countCoastFuelLubricant();
 consumerCosts2.setCoastRepair(Repair2);
 consumerCosts2.setDepricationCoast();

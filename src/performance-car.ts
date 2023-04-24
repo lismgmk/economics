@@ -1,4 +1,4 @@
-import { countWorkHour } from "./utils/consts";
+import { countWorkHour } from './utils/consts';
 
 export class PerformanceCar {
   private _Vp: number;
@@ -29,29 +29,29 @@ export class PerformanceCar {
     });
     this.cicl = result;
     console.log(
-      "время, затраченное на выполнение операций по сбору и транспортировке",
+      'время, затраченное на выполнение операций по сбору и транспортировке',
       this.cicl
     );
   }
 
-  setPSmen() {
+  setPSmen(x?: number) {
     this.pSmen =
-      ((countWorkHour * 3600 - 2400) * this._Vp * 0.85 * 0.87) / this.cicl;
-    console.log("сменная производительность", this.pSmen);
+      x || ((countWorkHour * 3600 - 2400) * this._Vp * 0.85 * 0.87) / this.cicl;
+    console.log('сменная производительность', this.pSmen);
   }
 
   setPyear() {
     this.pYear = this.pSmen * 269 * 1;
-    console.log("годовая производительность", this.pYear);
+    console.log('годовая производительность', this.pYear);
   }
 
   setSeveralHardWorkn() {
     this.severalHardWorkn = (countWorkHour * 1) / this.pSmen;
-    console.log("Удельная трудоемкость", this.severalHardWorkn);
+    console.log('Удельная трудоемкость', this.severalHardWorkn);
   }
 
   setProduction() {
-    this.production =countWorkHour / this.severalHardWorkn;
-    console.log("выработка", this.production);
+    this.production = countWorkHour / this.severalHardWorkn;
+    console.log('выработка', this.production);
   }
 }
