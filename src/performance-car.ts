@@ -41,7 +41,8 @@ export class PerformanceCar {
   }
 
   setPyear() {
-    this.pYear = this.pSmen * 269 * 1;
+    // this.pYear = this.pSmen * 269 * 1;
+    this.pYear = this.pSmen * 250 * 2.5 * 0.78;
     console.log('годовая производительность', this.pYear);
   }
 

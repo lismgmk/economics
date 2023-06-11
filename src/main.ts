@@ -6,8 +6,8 @@ import { cicleParam1, cicleParam2 } from './utils/consts';
 
 const valueWood1 = 11;
 const valueWood2 = 12;
-const coastCar1 = 1270000;
-const coastCar2 = 1300000;
+const coastCar1 = 533800;
+const coastCar2 = 550000;
 const coefEng1 = 0.86;
 const coefEng2 = 0.9;
 const Repair1 = 2050;
@@ -21,17 +21,16 @@ const performanceCar1 = new PerformanceCar(valueWood1);
 const performanceCar2 = new PerformanceCar(valueWood2);
 
 performanceCar1.setCicl(cicleParam1);
-performanceCar1.setPSmen(57.14);
+performanceCar1.setPSmen(56.79);
 performanceCar1.setPyear();
 performanceCar1.setSeveralHardWorkn();
 performanceCar1.setProduction();
 
 performanceCar2.setCicl(cicleParam2);
-performanceCar2.setPSmen(62.5);
+performanceCar2.setPSmen(62.81);
 performanceCar2.setPyear();
 performanceCar2.setSeveralHardWorkn();
 performanceCar2.setProduction();
-
 
 // 5.3.3 Эксплуатационные затраты потребителя по вариантам машин
 
