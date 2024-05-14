@@ -27,36 +27,30 @@ export class ConsumerCosts {
     this.coastCar = coastCar;
   }
 
-  setMainSalaryMainEmploy(
-    coastPerHour: number,
-    Ct: number,
-    coefFiekd: number = 1
-  ) {
+  setMainSalaryMainEmploy(coastPerHour: number, Ct: number, coefFiekd: number) {
+    console.log('++++++++', coastPerHour, Ct, coefFiekd);
+    
     const result = countWorkHour * coastPerHour * Ct * 1.25 * coefFiekd;
     const ozp = result * 0.346;
     if (coefFiekd === 1) {
-      this.mSalaryMain = result;
-      this.ozpMain = ozp;
       console.log(
         'Основная и дополнительная заработная плата оператора',
-        this.mSalaryMain,
+        result,
         'Отчисления в ФСЗН и БГС оператора',
-        this.ozpMain
+        ozp
       );
     } else {
-      this.mSalaryExtra = result;
-      this.ozpExtra = ozp;
 
       console.log(
         'Основная и дополнительная зарплата вспомогательных рабочих',
-        this.mSalaryExtra,
+        result,
         'Отчисления в ФСЗН и БГС вспомогательных рабочих',
-        this.ozpExtra
+        ozp
       );
     }
     return {
-      mSalaryMain: this.mSalaryMain,
-      ozpMain: this.ozpMain,
+      mSalaryMain: result,
+      ozpMain: ozp,
     };
   }
 

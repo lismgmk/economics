@@ -80,6 +80,7 @@ export interface IData {
       capexPerOutput: number;
     };
   };
+  title: string;
   annualProductivityGrowth: number;
   annualEconomicEffect: number;
   paybackPeriod: number;

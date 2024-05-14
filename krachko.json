@@ -1,0 +1,88 @@
+{
+  "initialData": {
+    "basic": {
+      "valueWood": 16.7,
+      "coastCar": 833000,
+      "coefEng": 0.86,
+      "Repair": 2050
+    },
+    "dev": {
+      "valueWood": 19.5,
+      "coastCar": 850000,
+      "coefEng": 0.9,
+      "Repair": 2100
+    }
+  },
+  "production": {
+    "basic": {
+      "trTime": 2294,
+      "shiftProd": 142.12,
+      "annualProd": 38231.16,
+      "spIntensity": 0.06,
+      "output": 142.12
+    },
+    "dev": {
+      "trTime": 2381.6,
+      "shiftProd": 159.85,
+      "annualProd": 42999.18,
+      "spIntensity": 0.05,
+      "output": 159.85
+    }
+  },
+  "operatorSalary": {
+    "basic": {
+      "salaryHour": 2.49,
+      "basic": 47.31,
+      "socialInsurance": 16.37
+    }
+  },
+  "auxiliaryWorkersSalary": {
+    "basic": {
+      "basic": 25.55,
+      "socialInsurance": 8.84
+    }
+  },
+  "expenses": {
+    "basic": {
+      "PerShift": 146.67,
+      "fuelPerShift": 396.88,
+      "motor": 102.96,
+      "hydraulic": 51.55,
+      "transmission": 9.9,
+      "plastic": 15.84,
+      "totalFuelAndLubric": 577.14,
+      "maintenance": 164,
+      "depreciation": 619.33,
+      "numFlights": 8.51,
+      "path": 5.11,
+      "tire": 2.54,
+      "other": 136.3,
+      "totalOperating": 1499.31,
+      "specificOperating": 10.55,
+      "capexPerOutput": 4.36
+    },
+    "dev": {
+      "PerShift": 153.49,
+      "fuelPerShift": 415.34,
+      "motor": 107.75,
+      "hydraulic": 53.95,
+      "transmission": 10.36,
+      "plastic": 16.58,
+      "totalFuelAndLubric": 603.98,
+      "maintenance": 168,
+      "depreciation": 631.97,
+      "numFlights": 8.2,
+      "path": 4.92,
+      "tire": 2.45,
+      "other": 140.64,
+      "totalOperating": 1547.04,
+      "specificOperating": 9.68,
+      "capexPerOutput": 3.95
+    }
+  },
+  "title": "Разрабатываемая машина отличается от прототипа тем, что она оборудована специальным кониковым удлинителем который позволяет загружать при транспортировке по две трехметровые пачки сортиментов.",
+  "annualProductivityGrowth": 0.12,
+  "annualEconomicEffect": 37460.73,
+  "paybackPeriod": 0.45,
+  "efficiencyCoefficient": 2.2
+}

@@ -1,0 +1,88 @@
+{
+  "initialData": {
+    "basic": {
+      "valueWood": 5,
+      "coastCar": 658000,
+      "coefEng": 0.86,
+      "Repair": 2050
+    },
+    "dev": {
+      "valueWood": 5.6,
+      "coastCar": 668000,
+      "coefEng": 0.9,
+      "Repair": 2100
+    }
+  },
+  "production": {
+    "basic": {
+      "trTime": 2294,
+      "shiftProd": 42.55,
+      "annualProd": 11446.45,
+      "spIntensity": 0.19,
+      "output": 42.55
+    },
+    "dev": {
+      "trTime": 2381.6,
+      "shiftProd": 45.91,
+      "annualProd": 12348.48,
+      "spIntensity": 0.17,
+      "output": 45.91
+    }
+  },
+  "operatorSalary": {
+    "basic": {
+      "salaryHour": 2.49,
+      "basic": 47.31,
+      "socialInsurance": 16.37
+    }
+  },
+  "auxiliaryWorkersSalary": {
+    "basic": {
+      "basic": 25.55,
+      "socialInsurance": 8.84
+    }
+  },
+  "expenses": {
+    "basic": {
+      "PerShift": 146.67,
+      "fuelPerShift": 396.88,
+      "motor": 102.96,
+      "hydraulic": 51.55,
+      "transmission": 9.9,
+      "plastic": 15.84,
+      "totalFuelAndLubric": 577.14,
+      "maintenance": 164,
+      "depreciation": 489.22,
+      "numFlights": 8.51,
+      "path": 5.11,
+      "tire": 2.54,
+      "other": 123.29,
+      "totalOperating": 1356.19,
+      "specificOperating": 31.87,
+      "capexPerOutput": 11.5
+    },
+    "dev": {
+      "PerShift": 153.49,
+      "fuelPerShift": 415.34,
+      "motor": 107.75,
+      "hydraulic": 53.95,
+      "transmission": 10.36,
+      "plastic": 16.58,
+      "totalFuelAndLubric": 603.98,
+      "maintenance": 168,
+      "depreciation": 496.65,
+      "numFlights": 8.2,
+      "path": 4.92,
+      "tire": 2.45,
+      "other": 127.11,
+      "totalOperating": 1398.19,
+      "specificOperating": 30.46,
+      "capexPerOutput": 10.82
+    }
+  },
+  "title": "которым является погрузочная универсальная машина АМКОДОР – 2151. Экономическая эффективность проектируемого погрузчика состоит в том, что за счет установки ковша с большим полезным объемом уменьшается время полной погрузки щеповоза.",
+  "annualProductivityGrowth": 0.08,
+  "annualEconomicEffect": 17449.99,
+  "paybackPeriod": 0.57,
+  "efficiencyCoefficient": 1.74
+}

@@ -82,6 +82,7 @@ export const initValues: IData = {
       capexPerOutput: 0,
     },
   },
+  title: '',
   annualProductivityGrowth: 0,
   annualEconomicEffect: 0,
   paybackPeriod: 0,
