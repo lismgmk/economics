@@ -12,6 +12,7 @@ export class PropertyEfficient {
 
   setSpecialInvest() {
     this.specialInvest = this.coastCar / (this.pYear * 5);
-    console.log("удельные капитальные вложения", this.specialInvest);
+    console.log('удельные капитальные вложения', this.specialInvest);
+    return this.specialInvest;
   }
 }

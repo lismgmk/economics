@@ -28,18 +28,24 @@ export class GeneralEfficient {
   setSpecialInvest() {
     this.increaseYearProj =
       (this.pYearProject - this.pYearBasic) / this.pYearBasic;
-    console.log("Годовой прирост производительности", this.increaseYearProj);
+    console.log('Годовой прирост производительности', this.increaseYearProj);
     this.efficientYear =
       (this.specificConsumerCoastBasic - this.specificConsumerCoastProject) *
       this.pYearProject;
-    console.log("Годовой экономический эффект", this.efficientYear);
+    console.log('Годовой экономический эффект', this.efficientYear);
     const term =
       (this.carCoastProject - this.carCoastBasic) / this.efficientYear;
-    console.log("Срок окупаемости", term);
+    console.log('Срок окупаемости', term);
     const coefTerm = 1 / term;
     console.log(
-      "Коэффициент сравнительной экономической эффективности",
+      'Коэффициент сравнительной экономической эффективности',
       coefTerm
     );
+    return {
+      increaseYearProj: this.increaseYearProj,
+      efficientYear: this.efficientYear,
+      term,
+      coefTerm,
+    };
   }
 }
